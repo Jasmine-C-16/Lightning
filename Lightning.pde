@@ -15,6 +15,7 @@ int g = (int)(Math.random()*255);
 int b = (int)(Math.random()*255);
 int xadd = (int)(Math.random()*2);
 int yadd = (int)(Math.random()*2);
+
 void draw()
 {
 	stroke(r,g,b);
