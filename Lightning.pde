@@ -14,12 +14,12 @@ int endy = 250;
 void draw()
 {
 
-		int r = (int)(Math.random()*255)+10;
-		int g = (int)(Math.random()*255)-10;
+		int r = (int)(Math.random()*255);
+		int g = (int)(Math.random()*255);
 		int b = (int)(Math.random()*255)+10;
 
-		int xadd = (int)((Math.random()*100)-50);
-		int yadd = (int)((Math.random()*100)-50);
+		int xadd = (int)((Math.random()*150)-75);
+		int yadd = (int)((Math.random()*150)-75);
 
 		stroke(r,g,b);
 		//stroke(80,10,200);
@@ -58,14 +58,17 @@ void draw()
 int o = 0;
 
 void mousePressed()
-{	
+{	int rb = (int)(Math.random()*255);
+	int gb = (int)(Math.random()*255);
+	int bb = (int)(Math.random()*255);
+	background(rb, gb, bb);
 	startx = mouseX;
 	starty = mouseY;
 	endx = 0;
 	endy = 250;
 	//redraw();
 	o++;
-	System.out.println("mousepressed " + o);
+	System.out.println("mousepressed " + o + "(" +rb+","+gb+","+bb+")");
 
 }
 
